@@ -1,0 +1,13 @@
+<form action="/" methods="get">
+  <label for="first">FIRST NUMBER</label>
+  <input type="text" name="first" placeholder="Enter the first number">
+  <label for="operator">OPERATOR</label>
+  <input type="text" name="operator" placeholder="Enter the Operator">
+  <label for="second">SECOND NUMBER</label>
+  <input type="text" name="second" placeholder="Enter a second number">
+  <input type="Submit">
+</form>
+
+<% if @result %>
+  <p>The result of <%= @first %> <%= @operator %> <%= @second %> is: <%= @result %></p>
+<% end %>

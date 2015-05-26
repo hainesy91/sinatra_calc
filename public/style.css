@@ -1,0 +1,25 @@
+body {
+  background-color: yellow;
+}
+
+nav {
+  text-align: center;
+}
+
+li {
+  text-decoration: none;
+  font-color: blue;
+  display: inline-block;
+  padding: 2%;
+  border: 1px dotted blue;
+  font-family: helvetica;
+}
+
+li a:hover {
+  color: pink;
+}
+
+li a {
+  color: blue;
+  text-decoration: none;
+}
