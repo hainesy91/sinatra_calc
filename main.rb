@@ -36,3 +36,13 @@ get '/sqrt' do
   end
   erb :sqrt
 end
+
+get '/bmi' do
+  @weight = params[:weight].to_f
+
+  if @weight > 0.0
+  @height = params[:height].to_f
+  @bmiresult = @weight / (@height * @height).to_f
+  end
+  erb :bmi
+end
