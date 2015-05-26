@@ -61,7 +61,7 @@ end
 get '/trip' do
   @distance = params[:distance].to_f
 
-  if @distance
+  if @distance > 0.0
   @speed = params[:speed].to_f
   @mpg = params[:mpg].to_f
   @price = params[:price].to_f

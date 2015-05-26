@@ -1,5 +1,6 @@
 body {
-  background-color: yellow;
+  background-image: url("http://www.freeimageslive.com/galleries/workplace/education/pics/numbers_border.jpg");
+  background-size: 100%;
 }
 
 nav {
@@ -22,4 +23,13 @@ li a:hover {
 li a {
   color: blue;
   text-decoration: none;
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  font-family: helvetica;
 }
