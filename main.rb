@@ -27,3 +27,12 @@ get '/power' do
   end
   erb :power
 end
+
+get '/sqrt' do
+  @first = params[:first].to_f
+
+  if @first
+    @sqrtresult = Math.sqrt(@first).to_f
+  end
+  erb :sqrt
+end
