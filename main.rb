@@ -17,3 +17,13 @@ get '/' do
   end
   erb :home
 end
+
+get '/power' do
+  @first = params[:first].to_f
+
+  if @first
+    @second = params[:second].to_f
+    @result = @first ** @second
+  end
+  erb :power
+end
